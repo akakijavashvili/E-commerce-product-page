@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 90%;
+    margin: 1% auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#burger{
+    display: none;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: 20%;
+}
+header ul li{
+    list-style: none;
+    font-weight: bold;
+    margin-top: 5px;
+    color: hsl(219, 9%, 45%);
+    cursor: pointer;
+}
+header img{
+    width: 60px;
+    height: 60px;
+    margin-top: -10px;
+    margin-left: 40px;
+}
+.right-menu{
+    display: flex;
+}
+.right-menu svg{
+    margin-top: 12px;   
+    cursor: pointer;
+    position: relative;
+}
+.line{
+    border: solid 1px hsl(220, 14%, 75%);
+    width: 100%;
+    margin-top: 30px;
+}
+
+header ul li:hover{
+    border-bottom:solid 2px hsl(26, 100%, 55%);
+}
+/*header end*/
+
+.container{
+    width: 90%;
+    margin: 1% auto;
+    display: flex;
+    justify-content: space-between;
+}
+.left-content{
+    width: 60%;
+}
+.right-condent{
+    width: 40%;
+}
+#slide{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+#main-img{
+    width: 72%;
+    height: 75%;
+}
+#slide img{
+    width: 100px;
+    height: 115px;
+}
+.right-condent h3{
+    color: hsl(26, 100%, 55%);
+    padding-top: 15%;
+    padding-bottom: 15px;
+}
+.right-condent h1{
+    width: 70%;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+.right-condent p{
+    color: hsl(219, 9%, 45%);
+    padding-bottom: 20px;
+    width: 80%;
+}
+.right-condent h2 span{
+    padding:5px;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    margin-left: 10px;
+    font-size: 16px;
+}
+.right-condent h2{
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+.buttons{
+width: 80%;
+margin: 2% auto;
+display: flex;
+justify-content: space-between;
+margin-left: 0px;
+}
+#plius-minus{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(223, 64%, 98%);
+}
+#plius-minus button{
+    border: none;
+    padding: 5px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: hsl(26, 100%, 55%);
+    background-color:hsl(223, 64%, 98%);
+}
+#add-cart{
+    width: 50%;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    display: flex;
+    padding-left: 12%;
+    font-size: 16px;
+}
+#add-cart span{
+    margin-right: 15px;
+    width: 18px;
+    height: 16px;
+}
+#burger-menu-close{
+    border: none;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+#burger-menu{
+    height: 200vh;
+    background-color: white;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+#body{
+    z-index: 0;
+}
+#burger-menu ul li {
+    list-style: none;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 25px;
+}
+#burgerbtn{
+    border: none;
+    padding: 0px;
+    background-color: white;
+}
+#avatar{
+    background-color: rgba(255, 255, 255, 0);
+}
+#basket{
+    position: absolute;
+    left: 75%;
+    top: 10%;
+    width: 23%;
+    background-color: white;
+    box-shadow: 5px 5px 5px -2px gray;
+    z-index: 50;
+    display: none;
+}
+#basket h2{
+    border-bottom: solid 2px black;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+}
+#basket p{
+    color: hsl(220, 14%, 75%);
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+#basketActive{
+    display: flex;
+    width: 90%;
+    margin: 15px auto;
+    justify-content: space-between;
+}
+#emptyBasket{
+    display: none;
+}
+#basketActive button{
+    border: none;
+    padding: 0;
+    background-color: white;
+    height: 16px;
+    width: 14px;
+}
+#basketActive img{
+    width: 15%;
+    height: 15%;
+}
+#basketActive p{
+    padding-top: 15px;
+    width: 80%;
+    color: hsl(219, 9%, 45%);
+}
+#basketActive svg{
+    margin-top: 10px;
+}
+#money{
+    color: black;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+#chekout{
+    width: 90%;
+    height: 50px;
+    margin-left: 6%;
+    margin-top: -10%;
+    margin-bottom: 2%;
+    background-color: hsl(26, 100%, 55%);
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.right-menu button{
+    border: none;
+    padding: 0;
+    background-color: white;
+}
+#absolute{
+    position: absolute;
+    top: 13%;
+    left: 15%;
+    z-index: 99;
+    display: none;
+}
+#activeImg{
+    width: 50%;
+    margin: 10% auto;
+    position: relative;
+}
+#mainimg{
+    width: 94%;
+    height: 30%;
+}
+#miniimgs{
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+}
+#miniimgs img{
+    width: 18%;
+}
+#activeclose{
+ position: absolute;
+ background-color: rgba(128, 126, 127, 0);
+ top: -25px; 
+ left: 90%; 
+ font-weight: bolder;
+ border: none;
+ padding: 0;
+ background-color: none;
+}
+#next{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    padding-top: 3px;
+}
+#back{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: -15px;
+    padding-top: 3px;
+    transform: rotate(180deg);
+}
+#next2{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 86%;
+    padding-top: 3px;
+    display: none;
+}
+#back2{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 16px;
+    padding-top: 3px;
+    transform: rotate(180deg);
+    display: none;
+}
+#img2{
+    opacity: 0.5;
+    border: solid 3px hsl(26, 100%, 50%);
+}
+#notification{
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 6px;
+    z-index: 1;
+    background-color: hsl(26, 100%, 50%);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: none;
+}
+/*content end*/
+
+
+@media only screen and (max-width: 900px){
+    #slide img{
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+    .left-content{
+        width: 90%;
+        margin: auto;
+    }
+    #main-img{
+        width: 100%;
+    }
+    .right-condent{
+        width: 90%;
+        margin: 1% auto;
+    }
+    header ul{
+        display: none;
+    }
+    #burger{
+        display: block;
+    }
+    #activeImg{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .buttons{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    #add-cart{
+        width: 80%;
+        margin: auto;
+        padding-left: 23%;
+    }
+    #plius-minus{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .logo{
+        margin-top: 10px;
+    }
+    #basket{
+        width: 90%;
+        left: 3%;
+    }
+}
